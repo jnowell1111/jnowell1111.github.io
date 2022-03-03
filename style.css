@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    border:dashed; */
+    }
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+/* the main container */
+
+.card{
+ width:650px;
+ height:963px;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161662;
+  background-color:rgb(255, 255, 255);
+  /* border-radius: 25px;*/
+}
+
+#front-card{
+
+  background-image: url('assets/bgnew.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+/*#back-card{
+ 
+  background-image: url('assets/bgback.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+*/
+h1{
+  /* to left align text */
+  font-size: 1em;
+  margin-top: 0.5%;
+  margin-left:6.5%;
+
+font-family: 'Libre Caslon Text', sans-serif;
+}
+
+.back-text {
+  margin-top: 50%;
+  margin-left:20%;
+}
+
+h3{
+  font-size: 2em;
+  font-family: 'Libre Caslon Text', sans-serif;
+  margin-top: 4%;
+  margin-left:5%;
+  color: rgb(28, 150, 231);
+}
+
+h2{
+  /* to left align text */
+  font-size: 0.7em;
+  margin-top: 0.7%;
+  margin-left:6.9%;
+
+font-family: 'Libre Caslon Text', sans-serif;
+}
+
+
+h5{
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.icon-container{
+  /* controls the width of the overall container */
+  width: 20%;
+  /* what enables the use of css grid */
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+
+.graphic-container{
+  /* controls the width of the overall container */
+  /* what enables the use of css grid */
+  display:grid;
+  width: 50%;
+  gap: 15px;
+  margin-left: 40%;
+  margin-top: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+svg{
+  fill:yellowgreen;
+  /* width:100%; */
+  /* height:auto; */
+  /* margin: 0 auto */
+}
+
+svg:hover{
+  fill:rgb(117, 168, 189);
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
